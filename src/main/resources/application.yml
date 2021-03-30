@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-34-225-103-117.compute-1.amazonaws.com:5432/dc5fri3amf7sti?password=6e4ffdeb3c4844f9f442881b4eb61665397d6ad27103449792f6778e6afde88b&sslmode=require&user=cnhohsukemqatu
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  #  mvc:
+  #    throw-exception-if-no-handler-found: true
+  #    static-path-pattern: /static
+  h2:
+    console:
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9102/eureka/
